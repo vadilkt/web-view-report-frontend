@@ -1,0 +1,13 @@
+
+<div class="report-container">
+    <h2>Rapport de Transmission</h2>
+    
+    <iframe *ngIf="pdfUrl" [src]="pdfUrl" class="report-frame"></iframe>
+  
+    <div class="buttons">
+      <button (click)="downloadReport('pdf')">Télécharger en PDF</button>
+      <button (click)="downloadReport('docx')">Télécharger en Word</button>
+      <button (click)="downloadReport('xlsx')">Télécharger en Excel</button>
+    </div>
+  </div>
+  
